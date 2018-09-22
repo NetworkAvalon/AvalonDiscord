@@ -638,6 +638,31 @@ client.on("guildMemberAdd", function(member) {
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
   if(newMessage.content != oldMessage) {
-    newMessage.channel.send(`${oldMessage} foi editado para ${newMessage}`)
+    client.channels.get(493206930819645450).send(
+      {
+        embed: {
+          url: "https://discordapp.com",
+          color: 1279565,
+          fields: [
+            {
+              name: "Autor:",
+              value: `${newMessage.author.tag}`,
+            },
+            {
+            name: "Canal",
+        value: `${newMessage.channel.tag}`,
+            },
+           {
+             name: "Mensagem original:",
+        value: `${oldMessage.content}`
+           },
+           {
+             name: "Mensagem editada:",
+        value: `${newMessage.content}`
+           }
+          ]
+        }
+      }
+    )
   }
 })
