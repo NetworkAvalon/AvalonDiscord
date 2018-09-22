@@ -635,3 +635,9 @@ client.on("guildMemberAdd", function(member) {
   }
 })
 })
+
+client.on('messageUpdate', (oldMessage, newMessage) => {
+  if(newMessage.content != oldMessage) {
+    newMessage.channel.send(`${oldMessage} foi editado para ${newMessage}`)
+  }
+})
