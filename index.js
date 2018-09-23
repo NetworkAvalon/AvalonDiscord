@@ -638,7 +638,7 @@ client.on("guildMemberAdd", function(member) {
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
   if(newMessage.content != oldMessage) {
-    client.channels.get(493206930819645450).send(
+    client.channels.get("493206930819645450").send(
       {
         embed: {
           url: "https://discordapp.com",
