@@ -667,6 +667,33 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
   }
 })
 
+client.on('messageDelete', (oldMessage) => {
+  if(messageDelete) {
+    client.channels.get("493206930819645450").send(
+      {
+        embed: {
+          url: "https://discordapp.com",
+          color: 1279565,
+          fields: [
+            {
+              name: "Autor:",
+              value: `${oldMessage.author.tag}`,
+            },
+            {
+            name: "Canal",
+        value: `${oldMessage.channel.tag}`,
+            },
+           {
+             name: "Mensagem original:",
+        value: `${oldMessage.content}`
+           }
+          ]
+        }
+      }
+    )
+  }
+})
+
 
 client.on("message", async message =>{
  client.on('message', function() {
