@@ -708,7 +708,7 @@ client.on("message", async message =>{
   if (message.content === "$loop") { 
     var interval = setInterval (function () {
       message.channel.send("123")
-    }, 1 * 100000); 
+    }, 1 * 1000000); 
   }
 }
 )
