@@ -43,7 +43,7 @@ client.on("message", async message => {
           fields: [
             {
               name: `📡O teu ping é:`,
-              value: `📡 ${Math.round(client.ping)}ms`
+              value: `📡 ${Math.round(message.author.ping)}ms`
             }
           ]
         }
@@ -639,26 +639,45 @@ Motivo: ${error}`));
                     }
                   )
                   }
-                  if(command === "sid"){
-                    message.channel.send(
-                      {
-                        embed: {
-                          url: "https://discordapp.com",
-                          color: 1279565,
-                          image: {
-                            url: ("https://image.prntscr.com/image/1JWdee6TQCKTmSrnqP4jrQ.png")
-                          },
-                          fields: [
-                            {
-                              name: "Sid o fodilhão",
-                              value: "DM para serviços"
-                            }
-                              ]
-                            }
-                          }
-                        )
-                        }
-        }); 
+ if(command === "sid"){
+ message.channel.send(
+ {
+  embed: {
+  url: "https://discordapp.com",
+  color: 1279565,
+  image: {
+url: ("https://image.prntscr.com/image/1JWdee6TQCKTmSrnqP4jrQ.png")
+ },
+  fields: [
+ {
+  name: "Sid o fodilhão",
+ value: "DM para serviços"
+}
+ ]
+ }
+ }
+)
+ }
+ if(command === "zin"){
+  message.channel.send(
+  {
+   embed: {
+   url: "https://discordapp.com",
+   color: 1279565,
+   image: {
+ url: ("https://images-na.ssl-images-amazon.com/images/I/31diOtF3JpL._SY355_.jpg")
+  },
+   fields: [
+  {
+   name: "Quando fizer anos",
+  value: "quero um destes:"
+ }
+  ]
+  }
+  }
+ )
+  }
+  }); 
 
 client.login(config.token);
 
