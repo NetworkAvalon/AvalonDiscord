@@ -638,7 +638,8 @@ client.on("guildMemberAdd", function(member) {
 
 client.on('messageUpdate', (oldMessage, newMessage) => {
   if(newMessage.content != oldMessage) {
-    client.channels.get("493206930819645450").send(
+    if (newMessage.author.id != "492743178361765890") {
+      client.channels.get("493206930819645450").send(
       {
         embed: {
           url: "https://discordapp.com",
@@ -667,9 +668,10 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
           ]
         }
       }
-    )
+     )}
   }
 })
+
 
 client.on('messageDelete', (message) => {
   if(message) {
