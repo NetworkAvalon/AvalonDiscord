@@ -650,7 +650,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
             },
             {
             name: "Canal",
-        value: `${newMessage.channel.tag}`,
+        value: `${oldMessage.channel.tag}`,
             },
            {
              name: "Mensagem original:",
