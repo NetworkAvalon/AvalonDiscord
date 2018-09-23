@@ -582,6 +582,25 @@ Motivo: ${error}`));
       }
     )
   }
+  if(command === "paulo"){
+    message.channel.send(
+      {
+        embed: {
+          url: "https://discordapp.com",
+          color: 1279565,
+          fields: [
+            {
+              name: "Deus Paulo",
+              value: {files: [
+                "./imagens/paulo.jpg"
+              ]
+            }
+            }
+          ]
+        }
+      }
+    )
+  }
 }); 
 
 client.login(config.token);
