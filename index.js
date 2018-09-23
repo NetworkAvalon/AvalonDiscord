@@ -704,9 +704,9 @@ client.on('messageDelete', (message) => {
 
 
 bot.on('message', function(message) {
-  if (message.content === "!botloop") { 
+  if (message.content === "!loop") { 
       var interval = setInterval (function () {
-          message.channel.send("123")
+        client.channels.get("493228844896092162").send("123")
           .catch(console.error);
       }, 1 * 1000000); 
   }
