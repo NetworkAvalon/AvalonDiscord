@@ -42,8 +42,8 @@ client.on("message", async message => {
           color: 1279565,
           fields: [
             {
-              name: `📡O teu ping é:`,
-              value: `📡 ${Math.round(message.author.ping)}ms`
+              name: `📡O meu ping é:`,
+              value: `📡 ${Math.round(client.ping)}ms`
             }
           ]
         }
