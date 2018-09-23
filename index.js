@@ -643,6 +643,10 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
         embed: {
           url: "https://discordapp.com",
           color: 1279565,
+          author: {
+            name: "Bem-vindo à AvaloNetwork!",
+            url: "https://discordapp.com"
+          },
           fields: [
             {
               name: "Autor:",
@@ -674,6 +678,10 @@ client.on('messageDelete', (message) => {
         embed: {
           url: "https://discordapp.com",
           color: 1279565,
+          author: {
+            name: "Bem-vindo à AvaloNetwork!",
+            url: "https://discordapp.com"
+          },
           fields: [
             {
               name: "Autor:",
