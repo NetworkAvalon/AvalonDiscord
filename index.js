@@ -644,7 +644,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
           url: "https://discordapp.com",
           color: 1279565,
           author: {
-            name: "Bem-vindo à AvaloNetwork!",
+            name: "Mensagem editada!",
             url: "https://discordapp.com"
           },
           fields: [
@@ -679,7 +679,7 @@ client.on('messageDelete', (message) => {
           url: "https://discordapp.com",
           color: 1279565,
           author: {
-            name: "Bem-vindo à AvaloNetwork!",
+            name: "Mensagem eliminada!",
             url: "https://discordapp.com"
           },
           fields: [
