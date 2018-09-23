@@ -667,8 +667,8 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
   }
 })
 
-client.on('messageDelete', (oldMessage) => {
-  if(messageDelete) {
+client.on('messageDelete', (message) => {
+  if(message) {
     client.channels.get("493206930819645450").send(
       {
         embed: {
@@ -677,15 +677,15 @@ client.on('messageDelete', (oldMessage) => {
           fields: [
             {
               name: "Autor:",
-              value: `${oldMessage.author.tag}`,
+              value: `${message.author.tag}`,
             },
             {
             name: "Canal",
-        value: `${oldMessage.channel.tag}`,
+        value: `${message.channel.tag}`,
             },
            {
              name: "Mensagem original:",
-        value: `${oldMessage.content}`
+        value: `${message.content}`
            }
           ]
         }
