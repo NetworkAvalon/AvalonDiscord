@@ -601,6 +601,25 @@ Motivo: ${error}`));
           }
         )
       }
+      if(command === "diego"){
+        message.channel.send(
+          {
+            embed: {
+              url: "https://discordapp.com",
+              color: 1279565,
+              image: {
+                url: ("https://segredosdomundo.r7.com/wp-content/uploads/2017/06/siginificado-bandeira-lgbt-2.jpg")
+              },
+              fields: [
+                {
+                  name: "Diego é paneleiro",
+                  value: "965746185 para serviços"
+                }
+                  ]
+                }
+              }
+            )
+          }
  }); 
 
 client.login(config.token);
