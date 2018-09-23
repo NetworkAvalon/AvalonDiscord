@@ -660,7 +660,7 @@ url: ("https://image.prntscr.com/image/1JWdee6TQCKTmSrnqP4jrQ.png")
  }
 )
  }
- if(command === "zin"){
+ if(command === "zincow"){
   message.channel.send(
   {
    embed: {
