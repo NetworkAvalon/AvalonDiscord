@@ -805,8 +805,14 @@ client.on('messageDelete', (message) => {
 client.on('message', function(message) {
   if (message.content === "!loop") { 
       var interval = setInterval (function () {
-        client.channels.get("493228844896092162").send("123")
+        client.channels.get("493228844896092162").send("!bot")
           .catch(console.error);
       }, 5 * 60000); 
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'antiafk') {
+    msg.reply('Estou aqui princesa');
   }
 });
