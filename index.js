@@ -703,13 +703,11 @@ client.on('messageDelete', (message) => {
 })
 
 
-client.on("message", async message =>{
- client.on('message', function() {
-  if (message.content === "$loop") { 
-    var interval = setInterval (function () {
-      message.channel.send("123")
-    }, 1 * 1000000); 
+bot.on('message', function(message) {
+  if (message.content === "!botloop") { 
+      var interval = setInterval (function () {
+          message.channel.send("123")
+          .catch(console.error);
+      }, 1 * 1000000); 
   }
-}
-)
-})
+});
