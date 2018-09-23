@@ -613,14 +613,33 @@ Motivo: ${error}`));
               fields: [
                 {
                   name: "Diego é paneleiro",
-                  value: "965746185 para serviços"
+                  value: "DM para serviços"
                 }
                   ]
                 }
               }
             )
-          }
- }); 
+            }
+            if(command === "guardian"){
+              message.channel.send(
+                {
+                  embed: {
+                    url: "https://discordapp.com",
+                    color: 1279565,
+                    image: {
+                      url: ("http://3.bp.blogspot.com/-YUJZWZfTt5s/TvUtKvDJw_I/AAAAAAAADL8/IGELL8I8B2I/s1600/mendigos-de-la-habana.jpg")
+                    },
+                    fields: [
+                      {
+                        name: "Sou o Guardian",
+                        value: "Fui vendido denovo por 2€"
+                      }
+                        ]
+                      }
+                    }
+                  )
+                  }
+        }); 
 
 client.login(config.token);
 
