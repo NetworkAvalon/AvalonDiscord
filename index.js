@@ -76,7 +76,7 @@ client.on("message", async message => {
           color: 1279565,
           fields: [
             {
-              name: `📢 Anuncio:`,
+              name: `📢 Anúncio:`,
               value: `${sayMessage}`
             }
           ]
@@ -588,20 +588,20 @@ Motivo: ${error}`));
         embed: {
           url: "https://discordapp.com",
           color: 1279565,
+          image: {
+            url: ("https://cdn.discordapp.com/attachments/413429942009987092/493409089657765906/paulo.jpg")
+          },
           fields: [
             {
               name: "Deus Paulo",
-              value: {files: [
-                "./imagens/paulo.jpg"
+              value: "Ajoelha-vos perante ele!"
+            }
               ]
             }
-            }
-          ]
-        }
+          }
+        )
       }
-    )
-  }
-}); 
+ }); 
 
 client.login(config.token);
 
