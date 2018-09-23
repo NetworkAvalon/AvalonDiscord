@@ -807,6 +807,6 @@ client.on('message', function(message) {
       var interval = setInterval (function () {
         client.channels.get("493228844896092162").send("123")
           .catch(console.error);
-      }, 1 * 100000); 
+      }, 1 * 1000); 
   }
 });
