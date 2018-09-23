@@ -558,7 +558,7 @@ Motivo: ${error}`));
           color: 1279565,
           fields: [
             {
-              name: "Ip: jogar.avalon.network.com :joystick: ",
+              name: "Ip: jogar.avalon-network.com :joystick: ",
               value: "Bom jogo :smiley:"
             }
           ]
@@ -622,7 +622,7 @@ client.on("guildMemberAdd", function(member) {
         value: "🎥"
       },
       {
-        name: "Ip: jogar.avalon.network.com 🕹",
+        name: "Ip: jogar.avalon-network.com 🕹",
         value: "Para aprenderes como jogar no servidor - Vai ao nosso canal no youtube🎥",
         inline: true
       },
