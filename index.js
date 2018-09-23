@@ -4,6 +4,8 @@ const client = new Discord.Client();
 
 const config = require("./config.json");
 
+const token = process.env.token;
+
 
 const cool = require('cool-ascii-faces');
 const express = require('express');
