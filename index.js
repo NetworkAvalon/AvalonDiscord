@@ -639,6 +639,25 @@ Motivo: ${error}`));
                     }
                   )
                   }
+                  if(command === "sid"){
+                    message.channel.send(
+                      {
+                        embed: {
+                          url: "https://discordapp.com",
+                          color: 1279565,
+                          image: {
+                            url: ("https://image.prntscr.com/image/1JWdee6TQCKTmSrnqP4jrQ.png")
+                          },
+                          fields: [
+                            {
+                              name: "Sid o fodilhão",
+                              value: "DM para serviços"
+                            }
+                              ]
+                            }
+                          }
+                        )
+                        }
         }); 
 
 client.login(config.token);
